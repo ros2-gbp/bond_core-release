@@ -1,0 +1,12 @@
+Source: ros-dashing-test-bond
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, ros-dashing-ament-cmake-gtest, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-bond, ros-dashing-bondcpp, ros-dashing-builtin-interfaces, ros-dashing-rclcpp, ros-dashing-rclcpp-lifecycle, ros-dashing-rosidl-default-generators, ros-dashing-std-msgs, uuid-dev, ros-dashing-ros-workspace, ros-dashing-rosidl-typesupport-connext-c, ros-dashing-rosidl-typesupport-connext-cpp, ros-dashing-rosidl-typesupport-fastrtps-c, ros-dashing-rosidl-typesupport-fastrtps-cpp, ros-dashing-rmw-connext-cpp, ros-dashing-rmw-fastrtps-cpp, ros-dashing-rmw-implementation, ros-dashing-rmw-opensplice-cpp, ros-dashing-rosidl-typesupport-opensplice-c, ros-dashing-rosidl-typesupport-opensplice-cpp
+Homepage: http://www.ros.org/wiki/test_bond
+Standards-Version: 3.9.2
+
+Package: ros-dashing-test-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-builtin-interfaces, ros-dashing-rosidl-default-runtime, ros-dashing-std-msgs, ros-dashing-ros-workspace
+Description: Contains tests for [[bond]], including tests for [[bondcpp]].
