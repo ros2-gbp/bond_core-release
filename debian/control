@@ -1,0 +1,13 @@
+Source: ros-dashing-bond
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-builtin-interfaces, ros-dashing-rosidl-default-generators, ros-dashing-std-msgs, ros-dashing-ros-workspace, ros-dashing-rosidl-typesupport-connext-c, ros-dashing-rosidl-typesupport-connext-cpp, ros-dashing-rosidl-typesupport-fastrtps-c, ros-dashing-rosidl-typesupport-fastrtps-cpp, ros-dashing-rmw-connext-cpp, ros-dashing-rmw-fastrtps-cpp, ros-dashing-rmw-implementation, ros-dashing-rmw-opensplice-cpp, ros-dashing-rosidl-typesupport-opensplice-c, ros-dashing-rosidl-typesupport-opensplice-cpp
+Homepage: http://www.ros.org/wiki/bond
+Standards-Version: 3.9.2
+
+Package: ros-dashing-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-builtin-interfaces, ros-dashing-rosidl-default-runtime, ros-dashing-std-msgs, ros-dashing-ros-workspace
+Description: A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.
+ The bond remains connected until it is either broken explicitly or until a heartbeat times out.
