@@ -1,0 +1,12 @@
+Source: ros-dashing-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-bond, ros-dashing-rclcpp, ros-dashing-rclcpp-lifecycle, ros-dashing-smclib, uuid-dev, ros-dashing-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-dashing-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-bond, ros-dashing-rclcpp, ros-dashing-rclcpp-lifecycle, ros-dashing-smclib, uuid-dev, ros-dashing-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
