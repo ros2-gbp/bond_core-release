@@ -1,0 +1,13 @@
+Source: ros-dashing-smclib
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, ros-dashing-ament-cmake-python, ros-dashing-ament-lint-auto, ros-dashing-ament-lint-common, ros-dashing-ros-workspace
+Homepage: http://smc.sourceforge.net/
+Standards-Version: 3.9.2
+
+Package: ros-dashing-smclib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ros-workspace
+Description: The State Machine Compiler (SMC) from http://smc.sourceforge.net/ converts a language-independent description of a state machine into the source code to support that state machine.
+ This package contains the libraries that a compiled state machine depends on, but it does not contain the compiler itself.
