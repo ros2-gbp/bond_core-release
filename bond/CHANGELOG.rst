@@ -2,6 +2,9 @@
 Changelog for package bond
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.0.0 (2021-01-26)
+------------------
+
 2.0.0 (2020-11-05)
 ------------------
 * Ros2 devel (`#54 <https://github.com/ros/bond_core/issues/54>`_)
