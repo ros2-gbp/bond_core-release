@@ -1,0 +1,12 @@
+Source: ros-galactic-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), pkg-config, ros-galactic-ament-cmake, ros-galactic-ament-lint-auto, ros-galactic-ament-lint-common, ros-galactic-bond, ros-galactic-rclcpp, ros-galactic-rclcpp-lifecycle, ros-galactic-smclib, uuid-dev, ros-galactic-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-galactic-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-bond, ros-galactic-rclcpp, ros-galactic-rclcpp-lifecycle, ros-galactic-smclib, uuid-dev, ros-galactic-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
