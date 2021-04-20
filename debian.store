@@ -1,1 +1,1 @@
-{"base": "ab5947f", "parent": "debian/rolling/bond_core", "previous": "78ea821", "trim": "", "trimbase": ""}
+{"base": "ed90a53", "parent": "debian/galactic/bond_core", "previous": "1f57d93", "trim": "", "trimbase": ""}
