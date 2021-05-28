@@ -2,14 +2,6 @@
 Changelog for package smclib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-3.0.1 (2021-01-26)
-------------------
-* Fix cpplint/uncrustify errors.
-* Contributors: Chris Lalancette
-
-3.0.0 (2021-01-26)
-------------------
-
 2.0.0 (2020-11-05)
 ------------------
 * fix deprecation warnings (`#56 <https://github.com/ros/bond_core/issues/56>`_)
