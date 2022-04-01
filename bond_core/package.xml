@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>bond_core</name>
-  <version>3.0.1</version>
+  <version>3.0.2</version>
   <description>
     A bond allows two processes, A and B, to know when the other has
     terminated, either cleanly or by crashing. The bond remains
@@ -22,7 +22,6 @@
   <exec_depend>bondcpp</exec_depend>
   <!-- <exec_depend>bondpy</exec_depend>-->
   <exec_depend>smclib</exec_depend>
-  <exec_depend>test_bond</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
