@@ -1,0 +1,12 @@
+Source: ros-humble-test-bond
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), pkg-config <!nocheck>, ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-bond <!nocheck>, ros-humble-bondcpp <!nocheck>, ros-humble-builtin-interfaces, ros-humble-rclcpp <!nocheck>, ros-humble-rclcpp-lifecycle, ros-humble-rclcpp-lifecycle <!nocheck>, ros-humble-rosidl-default-generators, ros-humble-std-msgs, uuid-dev <!nocheck>, ros-humble-ros-workspace, ros-humble-rosidl-typesupport-fastrtps-c, ros-humble-rosidl-typesupport-fastrtps-cpp
+Homepage: http://www.ros.org/wiki/test_bond
+Standards-Version: 3.9.2
+
+Package: ros-humble-test-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-builtin-interfaces, ros-humble-rosidl-default-runtime, ros-humble-std-msgs, ros-humble-ros-workspace
+Description: Contains tests for [[bond]], including tests for [[bondcpp]].
