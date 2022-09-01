@@ -105,6 +105,7 @@ class SmcException
 // Member methods
 //
 
+public:
 protected:
   // Constructor.
   explicit SmcException(const std::string & reason)
@@ -114,6 +115,14 @@ protected:
 private:
   // Default construction not allowed.
   SmcException();
+
+  // -----------------------------------------------------------
+  // Member data.
+  //
+
+public:
+protected:
+private:
 };
 
 // This class is thrown when a pop is issued on an empty
@@ -130,6 +139,16 @@ public:
   PopOnEmptyStateStackException()
   : SmcException("no state to pop from state stack")
   {}
+
+protected:
+private:
+  // -----------------------------------------------------------
+  // Member data.
+  //
+
+public:
+protected:
+private:
 };
 
 // This class is thrown when a transition is issued
@@ -148,6 +167,16 @@ public:
   StateUndefinedException()
   : SmcException("transition invoked while in transition")
   {}
+
+protected:
+private:
+  //  -----------------------------------------------------------
+  // Member data.
+  //
+
+public:
+protected:
+private:
 };
 
 // This class is thrown when a transition is issued
@@ -234,6 +263,14 @@ public:
     return _transition;
   }
 
+protected:
+private:
+  //  -----------------------------------------------------------
+  // Member data.
+  //
+
+public:
+protected:
 private:
   char * _state;
   char * _transition;
@@ -314,6 +351,14 @@ public:
     return _maxIndex;
   }
 
+protected:
+private:
+  // -----------------------------------------------------------
+  // Member data.
+  //
+
+public:
+protected:
 private:
   int _index;
   int _minIndex;
@@ -372,12 +417,15 @@ private:
 // Member data.
 //
 
+public:
 protected:
   // This state's printable name.
   char * _name;
 
   // This state's unique identifier.
   int _stateId;
+
+private:
 };
 
 class FSMContext
@@ -386,6 +434,8 @@ class FSMContext
 // Nested classes.
 //
 
+public:
+protected:
 private:
   // Implements the state stack.
   class StateEntry
@@ -416,6 +466,14 @@ public:
       return _next;
     }
 
+protected:
+private:
+    //-------------------------------------------------------
+    // Member data.
+    //
+
+public:
+protected:
 private:
     State * _state;
     StateEntry * _next;
@@ -685,6 +743,7 @@ private:
 // Member data
 //
 
+public:
 protected:
   // The current state of the finite state machine.
   State * _state;
