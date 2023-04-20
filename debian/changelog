@@ -1,0 +1,185 @@
+ros-iron-bond-core (4.0.0-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 31 Aug 2022 16:00:00 -0000
+
+ros-iron-bond-core (3.0.2-4jammy) jammy; urgency=high
+
+  * Remove test_bond dependency from bond_core (#79 <https://github.com/ros/bond_core/issues/79>)
+  * Contributors: Michael Carroll
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 31 Mar 2022 16:00:00 -0000
+
+ros-iron-bond-core (3.0.1-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 25 Jan 2021 16:00:00 -0000
+
+ros-iron-bond-core (3.0.0-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 25 Jan 2021 16:00:00 -0000
+
+ros-iron-bond-core (2.0.0-4jammy) jammy; urgency=high
+
+  * Ros2 devel (#54 <https://github.com/ros/bond_core/issues/54>)
+  * Make Michael Carroll the maintainer (#40 <https://github.com/ros/bond_core/issues/40>)
+  * Contributors: Karsten Knese, Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 04 Nov 2020 16:00:00 -0000
+
+ros-iron-bond-core (1.8.3-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 16 Aug 2018 16:00:00 -0000
+
+ros-iron-bond-core (1.8.2-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 26 Apr 2018 16:00:00 -0000
+
+ros-iron-bond-core (1.8.1-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 26 Oct 2017 16:00:00 -0000
+
+ros-iron-bond-core (1.8.0-4jammy) jammy; urgency=high
+
+  * switch to package format 2 (#27 <https://github.com/ros/bond_core/issues/27>)
+  * Contributors: Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 26 Jul 2017 16:00:00 -0000
+
+ros-iron-bond-core (1.7.19-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Sun, 26 Mar 2017 16:00:00 -0000
+
+ros-iron-bond-core (1.7.18-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Sun, 23 Oct 2016 16:00:00 -0000
+
+ros-iron-bond-core (1.7.17-4jammy) jammy; urgency=high
+
+  * update maintainer
+  * Contributors: Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 14 Mar 2016 16:00:00 -0000
+
+ros-iron-bond-core (1.7.16-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 29 Oct 2014 16:00:00 -0000
+
+ros-iron-bond-core (1.7.15-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 27 Oct 2014 16:00:00 -0000
+
+ros-iron-bond-core (1.7.14-4jammy) jammy; urgency=high
+
+  * Update maintainer field
+  * Contributors: Esteve Fernandez
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 07 May 2014 16:00:00 -0000
+
+ros-iron-bond-core (1.7.13-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Tue, 20 Aug 2013 16:00:00 -0000
+
+ros-iron-bond-core (1.7.12-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 05 Jun 2013 16:00:00 -0000
+
+ros-iron-bond-core (1.7.11-4jammy) jammy; urgency=high
+
+  * add CMakeLists.txt for metapackage
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Tue, 12 Mar 2013 16:00:00 -0000
+
+ros-iron-bond-core (1.7.10-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Sat, 12 Jan 2013 16:00:00 -0000
+
+ros-iron-bond-core (1.7.9-4jammy) jammy; urgency=high
+
+  * modified dep type of catkin
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 26 Dec 2012 16:00:00 -0000
+
+ros-iron-bond-core (1.7.8-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 12 Dec 2012 16:00:00 -0000
+
+ros-iron-bond-core (1.7.7-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 05 Dec 2012 16:00:00 -0000
+
+ros-iron-bond-core (1.7.6-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 29 Oct 2012 16:00:00 -0000
+
+ros-iron-bond-core (1.7.5-4jammy) jammy; urgency=high
+
+  * clean up package.xml files
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Fri, 26 Oct 2012 16:00:00 -0000
+
+ros-iron-bond-core (1.7.4-4jammy) jammy; urgency=high
+
+  * adding bond_core metapackage to replace former stack
+  * Contributors: Tully Foote
+
+ -- Michael Carroll <michael@openrobotics.org>  Fri, 05 Oct 2012 16:00:00 -0000
+
+ros-iron-bond-core (1.7.3-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 16:19:00 -0000
+
+ros-iron-bond-core (1.7.2-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 16:06:00 -0000
+
+ros-iron-bond-core (1.7.1-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 11:00:00 -0000
+
+ros-iron-bond-core (1.7.0-4jammy) jammy; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 08:51:00 -0000
+
+
