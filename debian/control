@@ -1,0 +1,13 @@
+Source: ros-iron-bond
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-iron-ament-cmake, ros-iron-ament-lint-auto <!nocheck>, ros-iron-ament-lint-common <!nocheck>, ros-iron-builtin-interfaces, ros-iron-rosidl-default-generators, ros-iron-std-msgs, ros-iron-ros-workspace, ros-iron-rosidl-typesupport-fastrtps-c, ros-iron-rosidl-typesupport-fastrtps-cpp
+Homepage: http://www.ros.org/wiki/bond
+Standards-Version: 3.9.2
+
+Package: ros-iron-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-iron-builtin-interfaces, ros-iron-rosidl-default-runtime, ros-iron-std-msgs, ros-iron-ros-workspace
+Description: A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.
+ The bond remains connected until it is either broken explicitly or until a heartbeat times out.
