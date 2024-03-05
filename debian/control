@@ -1,0 +1,12 @@
+Source: ros-rolling-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, ament-cmake-copyright <!nocheck>, ament-cmake-cppcheck <!nocheck>, ament-cmake-cpplint <!nocheck>, ament-cmake-flake8 <!nocheck>, ament-cmake-lint-cmake <!nocheck>, ament-cmake-pep257 <!nocheck>, ament-cmake-uncrustify <!nocheck>, ament-cmake-xmllint <!nocheck>, ament-lint <!nocheck>, libbond-dev, libbondcpp-dev, pkg-config, python3-bond, python3-smclib, ros-rolling-rclcpp, ros-rolling-rclcpp-lifecycle, uuid-dev, ros-rolling-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-rolling-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libbond-dev, libbondcpp-dev, python3-bond, python3-smclib, ros-rolling-rclcpp, ros-rolling-rclcpp-lifecycle, uuid-dev, ros-rolling-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
