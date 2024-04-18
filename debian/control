@@ -1,0 +1,12 @@
+Source: ros-jazzy-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), pkg-config, ros-jazzy-ament-cmake, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-bond, ros-jazzy-rclcpp, ros-jazzy-rclcpp-lifecycle, ros-jazzy-smclib, uuid-dev, ros-jazzy-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-bond, ros-jazzy-rclcpp, ros-jazzy-rclcpp-lifecycle, ros-jazzy-smclib, uuid-dev, ros-jazzy-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
