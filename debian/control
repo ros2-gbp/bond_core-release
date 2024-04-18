@@ -1,0 +1,12 @@
+Source: ros-jazzy-test-bond
+Section: misc
+Priority: optional
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, ament-cmake-copyright <!nocheck>, ament-cmake-cppcheck <!nocheck>, ament-cmake-cpplint <!nocheck>, ament-cmake-flake8 <!nocheck>, ament-cmake-googletest <!nocheck>, ament-cmake-lint-cmake <!nocheck>, ament-cmake-pep257 <!nocheck>, ament-cmake-uncrustify <!nocheck>, ament-cmake-xmllint <!nocheck>, ament-lint <!nocheck>, libbond-dev <!nocheck>, libbondcpp-dev <!nocheck>, libstd-msgs-dev, pkg-config <!nocheck>, python3-bond <!nocheck>, python3-std-msgs, ros-jazzy-builtin-interfaces, ros-jazzy-rclcpp <!nocheck>, ros-jazzy-rclcpp-lifecycle, ros-jazzy-rclcpp-lifecycle <!nocheck>, ros-jazzy-rosidl-default-generators, ros-std-msgs, uuid-dev <!nocheck>, ros-jazzy-ros-workspace, ros-jazzy-rosidl-typesupport-fastrtps-c, ros-jazzy-rosidl-typesupport-fastrtps-cpp
+Homepage: http://www.ros.org/wiki/test_bond
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-test-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libstd-msgs-dev, python3-std-msgs, ros-jazzy-builtin-interfaces, ros-jazzy-rosidl-default-runtime, ros-std-msgs, ros-jazzy-ros-workspace
+Description: Contains tests for [[bond]], including tests for [[bondcpp]].
