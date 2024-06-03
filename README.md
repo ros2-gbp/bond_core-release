@@ -1,3 +1,34 @@
+## bond_core (rolling) - 4.1.0-1
+
+The packages in the `bond_core` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling bond_core` on `Mon, 03 Jun 2024 20:37:07 -0000`
+
+These packages were released:
+- `bond`
+- `bond_core`
+- `bondcpp`
+- `bondpy`
+- `smclib`
+
+These packages were explicitly ignored:
+- `test_bond`
+
+Version of package(s) in repository `bond_core`:
+
+- upstream repository: https://github.com/ros/bond_core.git
+- release repository: https://github.com/ros2-gbp/bond_core-release.git
+- rosdistro version: `4.0.0-4`
+- old version: `4.0.0-4`
+- new version: `4.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.24.0`
+- rosdistro version: `0.9.1`
+- vcstools version: `0.1.42`
+
+
 ## bond_core (humble) - 3.0.2-3
 
 The packages in the `bond_core` repository were released into the `humble` distro by running `/usr/bin/bloom-release -r humble bond_core -e` on `Thu, 01 Sep 2022 18:25:33 -0000`
