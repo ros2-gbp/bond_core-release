@@ -2,6 +2,13 @@
 Changelog for package smclib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.1.0 (2024-06-03)
+------------------
+* Update bond_core to modern cmake. (`#94 <https://github.com/ros/bond_core/issues/94>`_)
+* Fix osx and win32 builds (`#83 <https://github.com/ros/bond_core/issues/83>`_)
+* [ros2] Update maintainers - 2022-11-07 (`#90 <https://github.com/ros/bond_core/issues/90>`_)
+* Contributors: Audrow Nash, Chris Lalancette, Tobias Fischer
+
 4.0.0 (2022-09-01)
 ------------------
 * Drop unused access specifiers (`#86 <https://github.com/ros/bond_core/issues/86>`_)
