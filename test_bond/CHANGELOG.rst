@@ -2,6 +2,12 @@
 Changelog for package test_bond
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.1.0 (2024-06-03)
+------------------
+* Fix osx and win32 builds (`#83 <https://github.com/ros/bond_core/issues/83>`_)
+* [ros2] Update maintainers - 2022-11-07 (`#90 <https://github.com/ros/bond_core/issues/90>`_)
+* Contributors: Audrow Nash, Tobias Fischer
+
 4.0.0 (2022-09-01)
 ------------------
 * Bond cleanups (`#87 <https://github.com/ros/bond_core/issues/87>`_)
