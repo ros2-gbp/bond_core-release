@@ -8,6 +8,7 @@ endif()
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
+add_definitions(-DNOMINMAX)
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
@@ -21,7 +22,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
-  set(ament_cmake_copyright_FOUND TRUE)
   find_package(ament_lint_auto REQUIRED)
   find_package(bond REQUIRED)
   find_package(bondcpp REQUIRED)
@@ -30,10 +30,14 @@ if(BUILD_TESTING)
   find_package(rosidl_cmake REQUIRED)
   find_package(Threads REQUIRED)
 
-  find_package(PkgConfig REQUIRED)
-  pkg_search_module(UUID REQUIRED uuid)
-  # we have to find the absolute path to uuid as target_link_directories is not available before cmake 3.13
-  find_library(uuid_ABS_PATH ${UUID_LIBRARIES} PATHS ${UUID_LIBRARY_DIRS})
+  if(UNIX AND NOT APPLE)
+    find_package(PkgConfig REQUIRED)
+    pkg_check_modules(UUID REQUIRED uuid)
+    # we have to find the absolute path to uuid as target_link_directories is not available before cmake 3.13
+    find_library(uuid_ABS_PATH ${UUID_LIBRARIES} PATHS ${UUID_LIBRARY_DIRS})
+  elseif(WIN32)
+    set(uuid_ABS_PATH Rpcrt4.lib)
+  endif()
 
   ament_lint_auto_find_test_dependencies()
 
@@ -42,8 +46,9 @@ if(BUILD_TESTING)
     target_include_directories(test_callbacks_cpp PRIVATE include)
     target_link_libraries(test_callbacks_cpp ${uuid_ABS_PATH})
     ament_target_dependencies(test_callbacks_cpp bond bondcpp rclcpp rclcpp_lifecycle)
-    rosidl_target_interfaces(test_callbacks_cpp
-      ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
+    rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+    target_link_libraries(test_callbacks_cpp "${cpp_typesupport_target}")
   endif()
 
   #  ament_add_gtest(test_callbacks_cpp_exc test/test_callbacks_cpp_exc.cpp)
