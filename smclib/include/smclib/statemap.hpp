@@ -46,25 +46,12 @@
 #ifndef SMCLIB__STATEMAP_HPP_
 #define SMCLIB__STATEMAP_HPP_
 
-#if (__GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 1))
 #if defined(SMC_NO_EXCEPTIONS)
 #include <cassert>
-#endif  // SMC_NO_EXCEPTIONS
 #include <cstdio>
-#elif defined(WIN32)
-#include <windows.h>
-#if defined(SMC_NO_EXCEPTIONS)
-#include <cassert>
-#endif  // SMC_NO_EXCEPTIONS
 #else
-#if defined(SMC_NO_EXCEPTIONS)
-#include <assert.h>
-#endif  // SMC_NO_EXCEPTIONS
-#include <stdio.h>
-#endif
-#if !defined(SMC_NO_EXCEPTIONS)
-#include <stdexcept>
 #include <cstring>
+#include <stdexcept>
 #endif
 
 #include <string>
@@ -84,9 +71,13 @@ inline char * copyString(const char * s)
 {
   char * retval = NULL;
   if (s != NULL) {
-    retval = new char[MAX_NAME_LEN + 1];
-    retval[MAX_NAME_LEN] = '\0';
-    (void) std::strncpy(retval, s, MAX_NAME_LEN);
+    size_t copy_len = strlen(s);
+    if (copy_len > MAX_NAME_LEN) {
+      copy_len = MAX_NAME_LEN;
+    }
+    retval = new char[copy_len + 1];
+    memcpy(retval, s, copy_len);
+    retval[copy_len] = '\0';
   }
 
   return retval;
@@ -105,7 +96,6 @@ class SmcException
 // Member methods
 //
 
-public:
 protected:
   // Constructor.
   explicit SmcException(const std::string & reason)
@@ -115,14 +105,6 @@ protected:
 private:
   // Default construction not allowed.
   SmcException();
-
-  // -----------------------------------------------------------
-  // Member data.
-  //
-
-public:
-protected:
-private:
 };
 
 // This class is thrown when a pop is issued on an empty
@@ -139,16 +121,6 @@ public:
   PopOnEmptyStateStackException()
   : SmcException("no state to pop from state stack")
   {}
-
-protected:
-private:
-  // -----------------------------------------------------------
-  // Member data.
-  //
-
-public:
-protected:
-private:
 };
 
 // This class is thrown when a transition is issued
@@ -167,16 +139,6 @@ public:
   StateUndefinedException()
   : SmcException("transition invoked while in transition")
   {}
-
-protected:
-private:
-  //  -----------------------------------------------------------
-  // Member data.
-  //
-
-public:
-protected:
-private:
 };
 
 // This class is thrown when a transition is issued
@@ -263,14 +225,6 @@ public:
     return _transition;
   }
 
-protected:
-private:
-  //  -----------------------------------------------------------
-  // Member data.
-  //
-
-public:
-protected:
 private:
   char * _state;
   char * _transition;
@@ -351,14 +305,6 @@ public:
     return _maxIndex;
   }
 
-protected:
-private:
-  // -----------------------------------------------------------
-  // Member data.
-  //
-
-public:
-protected:
 private:
   int _index;
   int _minIndex;
@@ -417,15 +363,12 @@ private:
 // Member data.
 //
 
-public:
 protected:
   // This state's printable name.
   char * _name;
 
   // This state's unique identifier.
   int _stateId;
-
-private:
 };
 
 class FSMContext
@@ -434,8 +377,6 @@ class FSMContext
 // Nested classes.
 //
 
-public:
-protected:
 private:
   // Implements the state stack.
   class StateEntry
@@ -466,14 +407,6 @@ public:
       return _next;
     }
 
-protected:
-private:
-    //-------------------------------------------------------
-    // Member data.
-    //
-
-public:
-protected:
 private:
     State * _state;
     StateEntry * _next;
@@ -743,7 +676,6 @@ private:
 // Member data
 //
 
-public:
 protected:
   // The current state of the finite state machine.
   State * _state;

@@ -2,6 +2,19 @@
 Changelog for package bond_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.1.1 (2025-01-23)
+------------------
+* Clarify licenses of bond_core and smclib (`#105 <https://github.com/ros/bond_core/issues/105>`_)
+* Contributors: Michael Carroll
+
+4.1.0 (2024-06-03)
+------------------
+* [ros2] Update maintainers - 2022-11-07 (`#90 <https://github.com/ros/bond_core/issues/90>`_)
+* Contributors: Audrow Nash
+
+4.0.0 (2022-09-01)
+------------------
+
 3.0.2 (2022-04-01)
 ------------------
 * Remove test_bond dependency from bond_core (`#79 <https://github.com/ros/bond_core/issues/79>`_)
