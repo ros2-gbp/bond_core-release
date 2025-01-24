@@ -1,0 +1,12 @@
+Source: ros-humble-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), pkg-config, ros-humble-ament-cmake, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-bond, ros-humble-rclcpp, ros-humble-rclcpp-lifecycle, ros-humble-smclib, uuid-dev, ros-humble-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-humble-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-bond, ros-humble-rclcpp, ros-humble-rclcpp-lifecycle, ros-humble-smclib, uuid-dev, ros-humble-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
