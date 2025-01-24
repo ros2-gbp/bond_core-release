@@ -2,6 +2,9 @@
 Changelog for package bond_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.1.2 (2025-01-24)
+------------------
+
 4.1.1 (2025-01-23)
 ------------------
 * Clarify licenses of bond_core and smclib (`#105 <https://github.com/ros/bond_core/issues/105>`_)
