@@ -1,0 +1,239 @@
+ros-rolling-bondpy (4.1.2-1noble) noble; urgency=high
+
+  * increase buffer size of bond_status callback in bondpy (#96 <https://github.com/ros/bond_core/issues/96>)
+  * Contributors: sosoeeee
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Fri, 24 Jan 2025 00:00:00 -0000
+
+ros-rolling-bondpy (4.1.1-1noble) noble; urgency=high
+
+  * Remove empty Doxygen mainpage files (#106 <https://github.com/ros/bond_core/issues/106>)
+  * Clarify licenses of bond_core and smclib (#105 <https://github.com/ros/bond_core/issues/105>)
+  * Contributors: Michael Carroll
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 23 Jan 2025 00:00:00 -0000
+
+ros-rolling-bondpy (4.1.0-1noble) noble; urgency=high
+
+  * bondpy migration to ROS2 (#89 <https://github.com/ros/bond_core/issues/89>)
+  * [ros2] Update maintainers - 2022-11-07 (#90 <https://github.com/ros/bond_core/issues/90>)
+  * Contributors: Antoine, Audrow Nash
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 03 Jun 2024 00:00:00 -0000
+
+ros-rolling-bondpy (1.8.3-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Fri, 17 Aug 2018 00:00:00 -0000
+
+ros-rolling-bondpy (1.8.2-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Fri, 27 Apr 2018 00:00:00 -0000
+
+ros-rolling-bondpy (1.8.1-1noble) noble; urgency=high
+
+  * fix package.xml to comply with schema (#30 <https://github.com/ros/bond_core/issues/30>)
+  * Contributors: Mikael Arguedas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Fri, 27 Oct 2017 00:00:00 -0000
+
+ros-rolling-bondpy (1.8.0-1noble) noble; urgency=high
+
+  * switch to package format 2 (#27 <https://github.com/ros/bond_core/issues/27>)
+  * Closer to pep8 compliance (#25 <https://github.com/ros/bond_core/issues/25>)
+  * Python3 compatibility (#24 <https://github.com/ros/bond_core/issues/24>)
+  * Fixes problem with bondpy not exiting with the node (#21 <https://github.com/ros/bond_core/issues/21>)
+  * Contributors: Aaron Miller, Mikael Arguedas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 27 Jul 2017 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.19-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 27 Mar 2017 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.18-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 24 Oct 2016 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.17-1noble) noble; urgency=high
+
+  * Queue size for a publisher #10 <https://github.com/ros/bond_core/issues/10>
+    Squash the warning.
+  * update maintainer
+  * Made code a bit more readable #12 <https://github.com/ros/bond_core/pull/12>
+  * made local timer a member so we can cancel it during shutdown #11 <https://github.com/ros/bond_core/pull/11>
+  * Contributors: Daniel Stonier, Esteve Fernandez, Hugo Boyer, Mikael Arguedas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 15 Mar 2016 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.16-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.15-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 28 Oct 2014 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.14-1noble) noble; urgency=high
+
+  * Export architecture_independent flag in package.xml #4 <https://github.com/ros/bond_core/pull/4>
+  * bondpy: Add catkin_package call to CMakeLists.txt #3 <https://github.com/ros/bond_core/pull/3>
+    If catkin_package is not called, the package.xml is not installed
+  * Update maintainer field
+  * Contributors: Esteve Fernandez, Scott K Logan, Vincent Rabaud
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 08 May 2014 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.13-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Wed, 21 Aug 2013 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.12-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 06 Jun 2013 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.11-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Wed, 13 Mar 2013 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.10-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Sun, 13 Jan 2013 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.9-1noble) noble; urgency=high
+
+  * fix wrong module for Duration
+  * add missing dep on rospy
+  * modified dep type of catkin
+  * Contributors: Dirk Thomas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 27 Dec 2012 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.8-1noble) noble; urgency=high
+
+  * update setup() to use generate_distutils_setup
+  * Contributors: Dirk Thomas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 13 Dec 2012 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.7-1noble) noble; urgency=high
+
+  * Updated url tags in package.xml's #1 <https://github.com/ros/bond_core/pull/1>
+  * Contributors: William Woodall
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 06 Dec 2012 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.6-1noble) noble; urgency=high
+
+  * fix catkin function order
+  * Contributors: Dirk Thomas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 30 Oct 2012 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.5-1noble) noble; urgency=high
+
+  * clean up package.xml files
+  * fixed python module import
+  * updated setup.py files
+  * Contributors: Dirk Thomas
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Sat, 27 Oct 2012 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.4-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Sat, 06 Oct 2012 00:00:00 -0000
+
+ros-rolling-bondpy (1.7.3-1noble) noble; urgency=high
+
+  * fix package building issues
+  * Contributors: Vincent Rabaud
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 02 Oct 2012 00:19:00 -0000
+
+ros-rolling-bondpy (1.7.2-1noble) noble; urgency=high
+
+  * add the missing catkin dependency
+  * Contributors: Vincent Rabaud
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Tue, 02 Oct 2012 00:06:00 -0000
+
+ros-rolling-bondpy (1.7.1-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 01 Oct 2012 19:00:00 -0000
+
+ros-rolling-bondpy (1.7.0-1noble) noble; urgency=high
+
+  * catkinize the package and bump to 1.7.0 even though it is not tagged yet
+  * Reverting all changes that were meant to debug test failures on the build farm.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036308
+  * More testing bond on the build farm: being careful to shutdown bond instances between tests.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036300
+  * bond tests: debugging around the message publishing.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036262
+  * Bond tests: debugging around state transition
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036259
+  * bump.  Just making the build farm build again
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036258
+  * bond tests: typo
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036257
+  * Bond: debug info about status message.  Still tracking down test errors on the build farm
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036256
+  * More debug info for tracking down test failures in the build farm.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036255
+  * Modified bond's state machine to handle "alive" messages from the sibling when already dead.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036189
+  * Added global "bond_disable_heartbeat_timeout" parameter
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036106
+  * In bond, wait_until_formed and wait_until_broken terminate when ROS shuts down.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4035632
+  * removed wiki syntax from description
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4035392
+  * Creating package descriptions for bondpy, bondcpp, and test_bond.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4035354
+  * The bond state machine more gracefully handles excessive requests to die.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4032653
+  * Moving bond into common
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4032634
+  * Contributors: Vincent Rabaud, kwc, sglaser
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 01 Oct 2012 16:51:00 -0000
+
+
