@@ -1,0 +1,12 @@
+Source: ros-kilted-bondpy
+Section: misc
+Priority: optional
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-bondpy
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-kilted-bond, ros-kilted-rclpy, ros-kilted-smclib, ros-kilted-ros-workspace
+Description: Python implementation of bond, a mechanism for checking when another process has terminated.
