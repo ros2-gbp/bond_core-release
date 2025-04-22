@@ -1,0 +1,13 @@
+Source: ros-kilted-bond
+Section: misc
+Priority: optional
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-builtin-interfaces, ros-kilted-rosidl-default-generators, ros-kilted-std-msgs, ros-kilted-ros-workspace, ros-kilted-rosidl-typesupport-fastrtps-c, ros-kilted-rosidl-typesupport-fastrtps-cpp
+Homepage: http://www.ros.org/wiki/bond
+Standards-Version: 3.9.2
+
+Package: ros-kilted-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-builtin-interfaces, ros-kilted-rosidl-default-runtime, ros-kilted-std-msgs, ros-kilted-ros-workspace
+Description: A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.
+ The bond remains connected until it is either broken explicitly or until a heartbeat times out.
