@@ -1,0 +1,229 @@
+ros-rolling-bond (4.1.3-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Mon, 16 Feb 2026 23:00:00 -0000
+
+ros-rolling-bond (4.1.2-1noble) noble; urgency=high
+
+
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Thu, 23 Jan 2025 23:00:00 -0000
+
+ros-rolling-bond (4.1.1-1noble) noble; urgency=high
+
+  * Remove empty Doxygen mainpage files (#106 <https://github.com/ros/bond_core/issues/106>)
+  * Clarify licenses of bond_core and smclib (#105 <https://github.com/ros/bond_core/issues/105>)
+  * Contributors: Michael Carroll
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Wed, 22 Jan 2025 23:00:00 -0000
+
+ros-rolling-bond (4.1.0-1noble) noble; urgency=high
+
+  * [ros2] Update maintainers - 2022-11-07 (#90 <https://github.com/ros/bond_core/issues/90>)
+  * Contributors: Audrow Nash
+
+ -- Geoffrey Biggs <geoff@openrobotics.org>  Sun, 02 Jun 2024 22:00:00 -0000
+
+ros-rolling-bond (4.0.0-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 31 Aug 2022 22:00:00 -0000
+
+ros-rolling-bond (3.0.2-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 31 Mar 2022 22:00:00 -0000
+
+ros-rolling-bond (3.0.1-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 25 Jan 2021 23:00:00 -0000
+
+ros-rolling-bond (3.0.0-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 25 Jan 2021 23:00:00 -0000
+
+ros-rolling-bond (2.0.0-1noble) noble; urgency=high
+
+  * Ros2 devel (#54 <https://github.com/ros/bond_core/issues/54>)
+  * Make Michael Carroll the maintainer (#40 <https://github.com/ros/bond_core/issues/40>)
+  * Contributors: Karsten Knese, Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 04 Nov 2020 23:00:00 -0000
+
+ros-rolling-bond (1.8.3-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 16 Aug 2018 22:00:00 -0000
+
+ros-rolling-bond (1.8.2-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 26 Apr 2018 22:00:00 -0000
+
+ros-rolling-bond (1.8.1-1noble) noble; urgency=high
+
+  * fix package.xml to comply with schema (#30 <https://github.com/ros/bond_core/issues/30>)
+  * Contributors: Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 26 Oct 2017 22:00:00 -0000
+
+ros-rolling-bond (1.8.0-1noble) noble; urgency=high
+
+  * switch to package format 2 (#27 <https://github.com/ros/bond_core/issues/27>)
+  * Contributors: Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 26 Jul 2017 22:00:00 -0000
+
+ros-rolling-bond (1.7.19-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Sun, 26 Mar 2017 22:00:00 -0000
+
+ros-rolling-bond (1.7.18-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Sun, 23 Oct 2016 22:00:00 -0000
+
+ros-rolling-bond (1.7.17-1noble) noble; urgency=high
+
+  * update maintainer
+  * Contributors: Mikael Arguedas
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 14 Mar 2016 23:00:00 -0000
+
+ros-rolling-bond (1.7.16-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 29 Oct 2014 23:00:00 -0000
+
+ros-rolling-bond (1.7.15-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 27 Oct 2014 23:00:00 -0000
+
+ros-rolling-bond (1.7.14-1noble) noble; urgency=high
+
+  * Export architecture_independent flag in package.xml #4 <https://github.com/ros/bond_core/pull/4>
+  * Update maintainer field
+  * Contributors: Esteve Fernandez, Scott K Logan, Vincent Rabaud
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 07 May 2014 22:00:00 -0000
+
+ros-rolling-bond (1.7.13-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Tue, 20 Aug 2013 22:00:00 -0000
+
+ros-rolling-bond (1.7.12-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 05 Jun 2013 22:00:00 -0000
+
+ros-rolling-bond (1.7.11-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Tue, 12 Mar 2013 23:00:00 -0000
+
+ros-rolling-bond (1.7.10-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Sat, 12 Jan 2013 23:00:00 -0000
+
+ros-rolling-bond (1.7.9-1noble) noble; urgency=high
+
+  * modified dep type of catkin
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 26 Dec 2012 23:00:00 -0000
+
+ros-rolling-bond (1.7.8-1noble) noble; urgency=high
+
+  * add missing downstream depend
+  * switched from langs to message_* packages
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 12 Dec 2012 23:00:00 -0000
+
+ros-rolling-bond (1.7.7-1noble) noble; urgency=high
+
+  * Updated url tags in package.xml's  #1 <https://github.com/ros/bond_core/pull/1>
+  * Contributors: William Woodall
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 05 Dec 2012 23:00:00 -0000
+
+ros-rolling-bond (1.7.6-1noble) noble; urgency=high
+
+  * fix catkin function order
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 29 Oct 2012 23:00:00 -0000
+
+ros-rolling-bond (1.7.5-1noble) noble; urgency=high
+
+  * clean up package.xml files
+  * Contributors: Dirk Thomas
+
+ -- Michael Carroll <michael@openrobotics.org>  Fri, 26 Oct 2012 22:00:00 -0000
+
+ros-rolling-bond (1.7.4-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Fri, 05 Oct 2012 22:00:00 -0000
+
+ros-rolling-bond (1.7.3-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 22:19:00 -0000
+
+ros-rolling-bond (1.7.2-1noble) noble; urgency=high
+
+  * add the missing catkin dependency
+  * Contributors: Vincent Rabaud
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 22:06:00 -0000
+
+ros-rolling-bond (1.7.1-1noble) noble; urgency=high
+
+
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 17:00:00 -0000
+
+ros-rolling-bond (1.7.0-1noble) noble; urgency=high
+
+  * catkinize the package and bump to 1.7.0 even though it is not tagged yet
+  * Modified bond's state machine to handle "alive" messages from the sibling when already dead.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036189
+  * Added global "bond_disable_heartbeat_timeout" parameter
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4036106
+  * The bond state machine more gracefully handles excessive requests to die.
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4032653
+  * Moving bond into common
+    --HG--
+    extra : convert_revision : svn%3Aeb33c2ac-9c88-4c90-87e0-44a10359b0c3/stacks/common/trunk%4032634
+  * Contributors: Vincent Rabaud, sglaser
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 01 Oct 2012 14:51:00 -0000
+
+
