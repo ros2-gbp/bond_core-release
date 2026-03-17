@@ -1,0 +1,12 @@
+Source: ros-kilted-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), pkg-config, ros-kilted-ament-cmake, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-bond, ros-kilted-rclcpp, ros-kilted-rclcpp-lifecycle, ros-kilted-smclib, uuid-dev, ros-kilted-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-kilted-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-bond, ros-kilted-rclcpp, ros-kilted-rclcpp-lifecycle, ros-kilted-smclib, uuid-dev, ros-kilted-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
