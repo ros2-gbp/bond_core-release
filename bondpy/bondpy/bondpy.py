@@ -37,7 +37,6 @@ from bondpy.BondSM_sm import BondSM_sm
 
 import rclpy
 from rclpy.duration import Duration
-from rclpy.exceptions import ParameterAlreadyDeclaredException
 
 
 def duration_to_sec(duration):
@@ -185,11 +184,7 @@ class Bond(object):
 
     def _on_heartbeat_timeout(self):
         # Checks that heartbeat timeouts haven't been disabled globally
-        try:
-            if not self.node.has_parameter(Constants.DISABLE_HEARTBEAT_TIMEOUT_PARAM):
-                self.node.declare_parameter(Constants.DISABLE_HEARTBEAT_TIMEOUT_PARAM, False)
-        except ParameterAlreadyDeclaredException:
-            pass
+        self.node.declare_parameter(Constants.DISABLE_HEARTBEAT_TIMEOUT_PARAM, False)
         disable_heartbeat_timeout = self.node.get_parameter(
             Constants.DISABLE_HEARTBEAT_TIMEOUT_PARAM).value
         if disable_heartbeat_timeout:

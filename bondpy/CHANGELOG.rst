@@ -2,12 +2,7 @@
 Changelog for package bondpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-4.4.0 (2026-03-17)
-------------------
-* fix ParameterAlreadyDeclaredException in _on_heartbeat_timeout (`#114 <https://github.com/ros/bond_core/issues/114>`_)
-* Contributors: Yannic
-
-4.1.3 (2026-02-17)
+4.1.4 (2026-03-17)
 ------------------
 
 4.1.2 (2025-01-24)
