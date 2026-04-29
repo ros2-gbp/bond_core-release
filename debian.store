@@ -1,1 +1,1 @@
-{"base": "4b8fb3df26a0", "parent": "debian/rolling/bond_core", "previous": "86664d471a7e", "trim": "", "trimbase": ""}
+{"base": "a3206d36", "parent": "debian/lyrical/bond_core", "previous": "79afa264", "trim": "", "trimbase": ""}
