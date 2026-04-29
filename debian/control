@@ -1,0 +1,12 @@
+Source: ros-lyrical-bondcpp
+Section: misc
+Priority: optional
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), pkg-config, ros-lyrical-ament-cmake, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-bond, ros-lyrical-rclcpp, ros-lyrical-rclcpp-lifecycle, ros-lyrical-smclib, uuid-dev, ros-lyrical-ros-workspace
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-bond, ros-lyrical-rclcpp, ros-lyrical-rclcpp-lifecycle, ros-lyrical-smclib, uuid-dev, ros-lyrical-ros-workspace
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
