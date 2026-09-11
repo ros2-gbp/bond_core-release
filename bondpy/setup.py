@@ -5,7 +5,7 @@ package_name = 'bondpy'
 
 setup(
     name=package_name,
-    version='4.4.0',
+    version='4.4.1',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
@@ -18,13 +18,14 @@ setup(
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
         'Topic :: Software Development',
     ],
     description=(
         'Python implementation of bond.'
     ),
-    license='BSD',
-    tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
+    license='BSD-3-Clause',
 )
